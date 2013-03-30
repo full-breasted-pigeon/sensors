@@ -41,7 +41,7 @@ sub read_sensor{
 }
 
 #TODO: Make this method call the database and fetch the data from there
-
+# These are your sensors, you can give them a name and their gpio pin on your pi
 sub get_sensors{
     my $sensors = {
         'Outside' => {

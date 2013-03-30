@@ -14,7 +14,7 @@ sub get_dbh {
 
     eval{
         # connect
-        $dbh = DBI->connect("DBI:Pg:dbname=sensors;host=localhost", "pi", "password", {'RaiseError' => 1});
+        $dbh = DBI->connect("DBI:Pg:dbname=sensors;host=localhost", "pi", "password", {'RaiseError' => 1}); #TODO: put your own connection details in here
         1;
     }
     or do{
